@@ -1,0 +1,99 @@
+.tb-post {
+    &__item {
+        background-color: var(--backgroundColorSecond);
+        border-radius: 12px;
+    }
+    &__padding {
+        padding: 16px 24px;
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &-avatarImg {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        &-avatarImg img {
+            background-size: cover;
+            border-radius: inherit;
+            height: 100%;
+            width: 100%;
+        }
+        &-info {
+            display: flex;
+            line-height: 50px;
+            gap: 15px;
+            font-weight: 500;
+
+            &-top {
+                font-size: 15px;
+            }
+            &-date {
+                font-size: 13px;
+                color: var(--tbColorTertiary);
+            }
+        }
+    }
+
+    // content
+
+    &__content {
+        display: grid;
+        overflow: hidden;
+
+        &-title {
+        }
+        &-desc {
+            font-size: var(--fontSize);
+            font-weight: var(--fontWeightFour);
+        }
+        &-img {
+            margin-top: 20px;
+            display: flex;
+        }
+    }
+    &__contentImg img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    &__footer {
+        display: flex;
+        // padding: 10px;
+        margin-top: 15px;
+        justify-content: space-between;
+        &-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        &-space {
+            display: flex;
+            line-height: 10px;
+            gap: 10px;
+        }
+    }
+}
+
+.footer-actions {
+    &__like {
+    }
+    &__button {
+        border: none;
+        background-color: var(--backgroundColorSecond);
+        cursor: pointer;
+    }
+    &__icon {
+        width: 24px;
+        height: 24px;
+    }
+    &__all {
+        display: flex;
+        align-items: center;
+        color: var(--tbColorTertiary);
+    }
+}

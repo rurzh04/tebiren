@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+@font-face {
+    font-family: 'Pascal';
+    src: local('Pascal'),
+        url('./assets/fonts/pascal/Pascal.ttf') format('truetype');
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --tebiren-text: #2aa5a0;
+    --backgroundColor: #000;
+    --backgroundColorSecond: #181d1c;
+    --tbBorderPrimary: #252525;
+    --tbIcon: #485656;
+    --tbColorPrimary: #eef2f1;
+    --tbColorTertiary: #768787;
+    --fontSize: 18px;
+    --fontWeightFour: 400;
+    --error-text: #fe4a4a;
+    --click-href: #252525;
+}
+
+body {
+    background-color: var(--backgroundColor);
+    color: var(--tbColorPrimary);
+}
+html,
+body,
+#root,
+.app,
+.content {
+    height: 100%;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    padding-left: 10px;
+}
+.container {
+    width: 1450px;
+    /* outline: 1px solid blue; */
+    align-items: center;
+}
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+.tebirenContent {
+    display: flex;
+}
+.content {
+    width: 710px;
+}
+.app {
+    padding: 24px 0px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+a {
+    text-decoration: none;
+    color: var(--tbColorPrimary);
+}
+svg {
+    color: var(--tbColorTertiary);
+}
+input::placeholder {
+    color: var(--tbColorPrimary);
+}
+.input__buttonTebiren {
+    display: flex;
+    align-items: center;
+    background-color: var(--backgroundColorSecond);
+    border-radius: 12px;
+}
+li {
+    list-style-type: none;
+}
+.error {
+    color: var(--error-text) !important;
+}

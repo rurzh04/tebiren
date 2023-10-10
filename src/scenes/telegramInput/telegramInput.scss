@@ -1,0 +1,22 @@
+.telegramTb {
+    background-color: #25a3e1;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 12px 0px;
+    border-radius: 12px;
+
+    &__icons {
+        color: #fff;
+        width: 24px;
+        height: 24px;
+    }
+    &__text {
+        font-size: 16px;
+    }
+    &_padding {
+        align-items: center;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+}

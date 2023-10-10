@@ -1,0 +1,286 @@
+.header {
+    z-index: 10;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    margin-top: -40px;
+
+    // grid-template-columns: auto 1fr 310px;
+    backdrop-filter: blur(12px);
+    background: rgba(var(--tp-background-color-primary-rgb), 0.75);
+    &__wrapper {
+        align-items: center;
+        display: flex;
+        margin-top: 30px;
+        gap: 80px;
+        width: 100%;
+    }
+    &__container-left {
+        margin-right: 50px;
+    }
+    &__logoTebiren {
+        font-family: 'Pascal', sans-serif;
+        font-size: 34px;
+        font-weight: 600;
+        color: var(--tbColorPrimary);
+    }
+    // CENTER
+    &__container-center {
+        display: flex;
+        gap: 30px;
+    }
+    &__container-post {
+    }
+    &__container-search {
+        display: flex;
+        flex-grow: 1;
+        max-width: 400px;
+        margin-right: 100px;
+        background-color: var(--backgroundColorSecond);
+        border-radius: 12px;
+    }
+    &__fisearch {
+        display: block;
+        width: 24px;
+        height: 24px;
+        stroke: var(--tbColorPrimary);
+    }
+    // RIGHT
+    &__container-right {
+        width: 380px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 40px;
+        align-items: center;
+    }
+    &__right-user {
+        display: flex;
+        gap: 5px;
+    }
+    &__user {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+    &__bi {
+        width: 20px;
+        height: 20px;
+    }
+    &__user-sight {
+        color: var(--tbColorTertiary);
+        font-weight: 500;
+        line-height: 25px;
+    }
+    @media screen and (max-width: 1400px) {
+        &__wrapper {
+            justify-content: space-between;
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        &__container-right {
+            width: 130px;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        &__wrapper {
+            justify-content: space-between;
+        }
+
+        &__container-right {
+            width: 80px;
+        }
+    }
+    @media screen and (max-width: 850px) {
+        .container {
+            width: 600px !important;
+            margin-left: 10px !important;
+        }
+        &__wrapper {
+            gap: 60px !important;
+            padding-right: 10px !important;
+            margin-left: 20px;
+        }
+        &__right-bell {
+            display: none;
+        }
+        &__container-left {
+            margin: 0 !important;
+        }
+        &__container-center {
+            margin: 0 !important;
+            gap: 20px !important;
+        }
+        &__container-post {
+            // display: none !important;
+        }
+
+        .post-buttons-select__button {
+            padding: 10px !important;
+        }
+        &__container-right {
+            margin: 0 !important;
+        }
+
+        .post-buttons-select__text {
+            display: none !important;
+            align-items: center;
+        }
+        &__container-search {
+            margin: 0 !important;
+        }
+        &__container-post {
+            background-color: #000 !important;
+        }
+    }
+}
+
+// Center right
+.post-buttons-select__content {
+    display: flex;
+}
+
+.search__input {
+    flex-grow: 2;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--tbColorPrimary);
+    background-color: var(--backgroundColorSecond);
+    border-color: var(--backgroundColorSecond);
+    border-radius: 12px;
+
+    padding: 14px 47px 14px 15px;
+
+    border-style: solid;
+}
+
+input:focus-visible {
+    outline: none;
+}
+.search__button {
+    background-color: var(--backgroundColorSecond);
+    border-color: var(--tbBorderPrimary);
+    border-style: solid;
+    border-radius: 12px;
+    padding: 14px 15px;
+    border: none;
+}
+.search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.post-buttons-select {
+    &__button {
+        color: var(--tbColorPrimary);
+        padding: 14px 25px 14px 25px;
+        font-size: 18px;
+    }
+    &__content {
+        display: flex;
+        gap: 10px;
+    }
+}
+.header__user {
+    &-profile {
+        border: none;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        width: 70px;
+        height: 40px;
+        cursor: pointer;
+        align-items: center;
+
+        &__img {
+            width: 40px !important;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &-down {
+        align-items: center;
+    }
+}
+
+.openProfile {
+    border: 1px solid var(--backgroundColor);
+    border-radius: 12px;
+    padding: 20px;
+    position: absolute;
+    width: 350px;
+    top: 100px;
+    right: 80px;
+    box-sizing: border-box;
+    background-color: var(--backgroundColorSecond);
+
+    &__profile {
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+    }
+
+    &-img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-text {
+        padding: 0;
+        margin: 15px 0;
+
+        & h4 {
+            font-size: 15px;
+            margin-bottom: 0px;
+            font-weight: 500;
+        }
+        & label {
+            color: var(--tbColorTertiary);
+            font-size: 13px;
+        }
+    }
+    &-box {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        padding: 5px;
+        color: var(--tbColorTertiary);
+
+        & h4 {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+    &-icon {
+        width: 23px;
+        height: 23px;
+        margin-right: 20px;
+    }
+
+    &_section {
+        padding-top: 30px;
+        display: grid;
+        grid-gap: 10px;
+    }
+    &-exit {
+        border-top: 1px solid var(--tbIcon);
+        padding-top: 30px;
+    }
+}

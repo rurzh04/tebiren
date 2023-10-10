@@ -1,0 +1,48 @@
+.tbCourse {
+    background-color: var(--backgroundColorSecond);
+    border-radius: 12px;
+    &-padding {
+        padding: 18px 24px;
+        display: grid;
+        gap: 20px;
+    }
+    &-item {
+        display: grid;
+        gap: 10px;
+    }
+    &__header {
+        font-size: 18px;
+    }
+    &__content {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    &__link {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        overflow: hidden;
+        &-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+
+            & img {
+                background-size: cover;
+                border-radius: inherit;
+                // height: 100%;
+                width: 100%;
+            }
+        }
+        &-title {
+            margin-top: 10px;
+            display: grid;
+            font-size: 16px;
+            & p {
+                font-size: 14px;
+                color: var(--tbColorTertiary);
+            }
+        }
+    }
+}

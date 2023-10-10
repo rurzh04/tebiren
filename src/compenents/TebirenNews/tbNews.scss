@@ -1,0 +1,16 @@
+.tbnews {
+    // gap: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 380px;
+
+    overflow: hidden;
+    @media screen and (max-width: 850px) {
+        display: none;
+    }
+
+    @media screen and (max-width: 1000px) {
+        // display: none;
+    }
+}

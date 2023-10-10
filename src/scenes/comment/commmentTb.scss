@@ -1,0 +1,20 @@
+.leftComment {
+    background-color: var(--backgroundColorSecond);
+    border-radius: 12px;
+    margin-top: 20px;
+    &-padding {
+        padding: 18px 24px;
+        display: grid;
+        gap: 20px;
+    }
+    &-item {
+        display: grid;
+        gap: 10px;
+    }
+    &__header {
+        font-size: 18px;
+    }
+    &__content {
+        display: flex;
+    }
+}

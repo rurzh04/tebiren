@@ -1,0 +1,52 @@
+.tebiren__sidebar {
+    display: contents;
+    overflow: hidden;
+    width: 235px;
+    margin-left: 20px;
+    background-color: var(--backgroundColor);
+}
+.menu-button__icon {
+    display: none;
+}
+.ps-sidebar {
+    &-container {
+        background-color: #000 !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .menu-button__icon {
+        display: flex;
+        padding: 10px;
+    }
+    .tebiren__sidebar {
+        margin-top: 50px;
+        overflow: none;
+        width: 0px;
+    }
+    .pro-inner-item {
+        padding: '0px 35px 5px 20px !important';
+    }
+    .sb-button {
+        position: absolute;
+        top: 25px;
+        left: 10px;
+        border: none;
+        background-color: var(--backgroundColor);
+        &__icon {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .ps-sidebar {
+        &-root {
+            margin-top: 100px;
+        }
+    }
+    .ps-submenu-content {
+        background-color: var(--backgroundColor);
+    }
+    .css-ewdv3l {
+        background-color: var(--backgroundColor);
+    }
+}
